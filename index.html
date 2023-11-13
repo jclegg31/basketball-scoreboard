@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
@@ -10,59 +11,63 @@
 
 <body>
     <div class="container">
-        <div>
-            <h3>HOME</h3>
-            <div class="score-container">
-                <p class="home-score-container" id="home-score">0</p>
+        <main>
+            <div>
+                <h3>HOME</h3>
+                <div class="score-container">
+                    <p class="home-score-container" id="home-score">0</p>
+                </div>
+
+                <div class="add-home-scores-container">
+                    <button onclick="addOneHome()" class="add-score">
+                        +1
+                    </button>
+
+                    <button onclick="addTwoHome()" class="add-score">
+                        +2
+                    </button>
+
+                    <button onclick="addThreeHome()" class="add-score">
+                        +3
+                    </button>
+                </div>
+
+
             </div>
 
-            <div class="add-home-scores-container">
-                <button onclick="addOneHome()" class="add-score">
-                    <p>+1</p>
-                </button>
 
-                <button onclick="addTwoHome()" class="add-score">
-                    <p>+2</p>
-                </button>
+            <div>
+                <h3>GUEST</h3>
+                <div class="score-container">
+                    <p class="guest-score-container" id="guest-score">0</p>
+                </div>
 
-                <button onclick="addThreeHome()" class="add-score">
-                    <p>+3</p>
-                </button>
+                <div class="add-guest-scores-container">
+                    <button onclick="addOneGuest()" class="add-score">
+                        +1
+                    </button>
+
+                    <button onclick="addTwoGuest()" class="add-score">
+                        +2
+                    </button>
+
+                    <button onclick="addThreeGuest()" class="add-score">
+                        +3
+                    </button>
+                </div>
+
+
             </div>
+        </main>
 
-
-        </div>
-
-
-        <div>
-            <h3>GUEST</h3>
-            <div class="score-container">
-                <p class="guest-score-container" id="guest-score">0</p>
-            </div>
-
-            <div class="add-guest-scores-container">
-                <button onclick="addOneGuest()" class="add-score">
-                    <p>+1</p>
-                </button>
-
-                <button onclick="addTwoGuest()" class="add-score">
-                    <p>+2</p>
-                </button>
-
-                <button onclick="addThreeGuest()" class="add-score">
-                    <p>+3</p>
-                </button>
-            </div>
-
-            <div class="new-game-container">
-                <button onclick="newGame()" id="new-game-btn">NEW GAME</button>
-            </div>
+        <div class="new-game-container">
+            <button onclick="newGame()" class="new-game-btn">NEW GAME</button>
         </div>
 
     </div>
 
 
-    </div>
+
 
 
 
